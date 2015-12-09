@@ -1,0 +1,67 @@
+\documentclass[12pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\begin{document}
+\SweaveOpts{concordance=TRUE}
+\author{Johanna}
+\begin{center}
+\textbf{EXAMÉN}
+\end{center}
+\texttt{Nombre: Betty Quezada}\\
+\texttt{Docente: Pablo Ordoñez}\\
+\texttt{Módulo: VI A}\\
+\texttt{FECHA:09-12-2015}\\
+
+\begin{center}
+\section*{Segunda Parte}
+\textbf{¿Es aplicable la ingeniería de software cuando se elaboran webapps?}
+
+Si permite a los ingenieros de la web brindar capacidad de computo junto con contenido de informacion
+
+\textbf{Un breve descripción del dataset Titanic}
+
+
+
+El hundimiento del RMS Titanic es uno de los naufragios más infames de la historia. El 15 de abril de 1912, durante su viaje inaugural, el Titanic se hundió después de chocar con un iceberg, matando a 1.502 de 2224 pasajeros y tripulantes. Esta tragedia sensacional conmocionó a la comunidad internacional y condujo a mejores normas de seguridad aplicables a los buques.
+
+Una de las razones por las que el naufragio condujo a la pérdida de la vida era que no había suficientes botes salvavidas para los pasajeros y la tripulación. Aunque hubo algún elemento de suerte involucrada en sobrevivir al hundimiento, algunos grupos de personas tenían más probabilidades de sobrevivir que otras, como las mujeres, los niños y la clase alta.
+
+En este desafío, le pedimos que complete el análisis de lo que eran propensos a sobrevivir tipo de personas. En particular, le pedimos que aplicar las herramientas de aprendizaje automático para predecir que los pasajeros sobrevivieron a la tragedia.\\
+
+
+\textbf{Mostrar el dataset}
+
+
+<<results=verbatim, echo=FALSE>>=
+Ti<-read.csv("/home/jadira/Escritorio/Titanic.csv", sep = ",")
+print(Ti)
+
+@
+
+\textbf{¿Cuál es el número total de casos en el dataset?}
+<<results=verbatim, echo=FALSE>>=
+Ti<-read.csv("/home/jadira/Escritorio/Titanic.csv", sep = ",")
+print("El numero total de casos fueron:")
+sum(Ti$Freq)
+
+
+@
+
+
+
+\end{center}
+
+
+
+
+
+
+
+
+
+\end{document}
